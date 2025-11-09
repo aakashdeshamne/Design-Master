@@ -1,6 +1,7 @@
 package Challange3.Entity;
 
 import java.time.LocalDate;
+import java.util.Random;
 
 public class Loan {
     private int loanId;
@@ -9,8 +10,8 @@ public class Loan {
     private LocalDate loanDate;
     private LocalDate dueDate;
     private final int loan_duretion_days=11;
-    public Loan(int loanId, int bookId, int memberId) {
-        this.loanId = loanId;
+    public Loan(int bookId, int memberId) {
+        this.loanId = new Random().nextInt(100000);
         this.bookId = bookId;
         this.memberId = memberId;
         this.loanDate = LocalDate.now();
