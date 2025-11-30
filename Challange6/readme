@@ -1,0 +1,22 @@
+# Design a Splitwise-like Application (Simplified) 💸
+Problem Statement: Design a simplified expense-sharing application like Splitwise. The application should handle users and their expenses.
+
+# Functional Requirements:
+
+The system should allow adding users.
+
+A user can add an expense, specifying the total amount and the users involved.
+
+For this level, only support equal splits. For example, if User A pays $100 for an expense involving User A, User B, and User C, each person's share is $33.33.
+
+The system should be able to show the balance for a specific user: who they owe money to and who owes them money.
+
+Provide a way to show the simplified balance (e.g., if A owes B $10 and B owes A $5, the simplified balance is A owes B $5).
+
+A user can settle their balances.
+
+# Non-Functional Requirements:
+
+The model should be clean and clearly represent users, expenses, and balances.
+
+The code should be extensible to support other types of splits (e.g., exact amounts, percentages) in the future.
